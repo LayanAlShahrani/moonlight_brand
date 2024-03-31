@@ -1,0 +1,243 @@
+*{
+
+    font-family: "Lora", serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    scroll-behavior: smooth;
+}
+
+:root{
+    --fontcolor1: #CE9647;
+    --fontcolor2:  #8F6325;
+    --fontcolor3: black;
+    --backgroundcolor1: #FFF9F2 ;
+    --backgroundcolor2: #fff3b82f ;
+    --backgroundcolor3: #392c0d53 ;
+}
+header{
+    background-color: var(--backgroundcolor1);
+}
+header nav{
+height: 10vh;
+display: flex;
+flex-direction: row;
+background-color:var(--backgroundcolor3);
+border-radius: 3rem;
+/* position: fixed; */
+z-index: 999;
+}
+
+header nav .logocontainer{
+    width: 10%;
+  
+}
+
+header nav .logocontainer img{
+    width:50%;
+    border-radius: 3rem;
+}
+
+.contentcontainer{
+    position: relative;
+    left:30%;
+    margin-top: 1rem;
+
+}
+
+.contentcontainer ul  {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.contentcontainer ul li a{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--fontcolor1);
+}
+
+.contentcontainer ul li a:hover{
+    font-weight: bolder;
+    cursor: pointer;
+    color: var(--fontcolor3);
+}
+
+.homepage{
+    width: 100%;
+    height: 90vh;
+    padding: 1rem;
+    background: url(photos/homebackground.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepage h1{
+font-size: 2rem;
+position: relative;
+top: 40%;
+color: var(--fontcolor1);
+}
+
+
+.go_to_shopping{
+    position: relative;
+    top:62%;
+    color:var(--fontcolor1);
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+
+
+.go_to_shopping  ul{
+
+    display: flex;
+    text-align: center;
+    /* justify-content: space-between; */
+}
+.go_to_shopping ul li button{
+    
+    background-color:var(--backgroundcolor2);
+    border-radius: 1rem;
+    padding: 10px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(201, 196, 196, 0.527); /* Box Shadow */
+}
+.go_to_shopping ul li a{
+    color: var(--fontcolor3);
+    padding-right: 2rem;
+    font-size: 1.5rem;
+
+}
+.go_to_shopping ul li a:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+footer{
+    height: 40vh;
+    padding-top: 1rem;
+    background-color: var(--backgroundcolor1);
+    display: flex;
+    justify-content: space-between;
+}
+.contact_us{
+    width: 50%;
+    text-align: center;
+    color: var(--fontcolor1);
+}
+.contact_us form{
+    display: flex;
+    flex-direction: column;
+}
+.contact_us form input , textarea{
+    margin: 10px;
+    background-color: var(--backgroundcolor2);
+    box-shadow: 0px 4px 8px rgba(201, 196, 196, 0.527);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--fontcolor1);
+} 
+.contact_us form input::placeholder , textarea::placeholder{
+font-size: 1rem;
+color: var(--fontcolor1);
+}
+
+.who_we_are{
+    width: 50%;
+    text-align: start;
+    padding: 10px;
+    margin-left: 8rem;
+    color: var(--fontcolor1);
+    h3{
+        color: var(--fontcolor3);
+        margin-bottom:30px;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+.most_selling_product{
+    height: 100vh;
+    text-align: center;
+}
+
+.most_selling_product_label{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    color: var(--fontcolor2);
+}
+.most_selling_product_list{
+  
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.most_selling_product_list .item_card{
+    width: 20%;
+    height:480px;
+    background-color: rgb(245, 249, 249);
+    box-shadow: 0px 4px 8px rgba(6, 13, 80, 0.18);
+    border-radius: 1rem;
+    margin: 1rem;
+    /* padding-top:  1rem; */
+    text-align: center;
+}
+.item_card img{
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+.item_card .info{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    .title{
+        margin-bottom: 1rem;
+    }
+}
+
+
+.item_card button{
+    margin-top: 2rem;
+    width: 60%;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+.item_card button:hover{
+    color: var(--fontcolor1);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.go_to_all_pro button{
+    margin-bottom: 2rem;
+    width: 30%;
+    height: 3.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(6, 13, 80, 0.18);
+    a{
+        color: var(--fontcolor2);
+    }
+}
+
+.go_to_all_pro button:hover{
+    a{
+        color: var(--fontcolor1);
+    }
+}

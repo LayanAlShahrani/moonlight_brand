@@ -1,0 +1,244 @@
+
+*{
+
+    font-family: "Lora", serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+    scroll-behavior: smooth;
+}
+
+:root{
+    --fontcolor1: #CE9647;
+    --fontcolor2:  #8F6325;
+    --fontcolor3: black;
+    --backgroundcolor1: #FFF9F2 ;
+    --backgroundcolor2: #fff3b82f ;
+    --backgroundcolor3: #392c0d53 ;
+}
+header{
+    background-color: var(--backgroundcolor1);
+}
+header nav{
+height: 10vh;
+display: flex;
+flex-direction: row;
+background-color:var(--backgroundcolor3);
+border-radius: 3rem;
+/* position: fixed; */
+z-index: 999;
+}
+
+header nav .logocontainer{
+    width: 10%;
+  
+}
+
+header nav .logocontainer img{
+    width:50%;
+    border-radius: 3rem;
+}
+
+.contentcontainer{
+    position: relative;
+    left:30%;
+    margin-top: 1rem;
+
+}
+
+.contentcontainer ul  {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.contentcontainer ul li a{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--fontcolor1);
+}
+
+.contentcontainer ul li a:hover{
+    font-weight: bolder;
+    cursor: pointer;
+    color: var(--fontcolor3);
+}
+
+
+.product_sec{
+    text-align: center;
+   
+}
+
+.product_label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    color: var(--fontcolor2);
+}
+.product_list{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.product_list .item_card{
+    width: 20%;
+    height:480px;
+    background-color: rgb(245, 249, 249);
+    box-shadow: 0px 4px 8px rgba(6, 13, 80, 0.18);
+    border-radius: 1rem;
+    margin: 1rem;
+    /* padding-top:  1rem; */
+    text-align: center;
+}
+.item_card img{
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+.item_card .info{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    .title{
+        margin-bottom: 1rem;
+    }
+}
+
+
+.item_card button{
+    margin-top: 2rem;
+    width: 60%;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+.item_card button:hover{
+    color: var(--fontcolor1);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.active .card{
+    background-color: rgb(252, 252, 251);
+    border: 1px solid black;
+}
+
+.active .card{
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 90vh;
+    top:10vh;
+    right: 0px;
+    padding: 0px;
+    h1{
+        display: block;
+    }
+}
+.active .card h1{
+    color: var(--fontcolor2);
+}
+
+.card{
+    display: none;
+}
+
+.checkOut{
+    background-color: #30200a;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    color: var(--fontcolor1);
+    text-align: center;
+    flex-direction: row;
+    /* border: 3px dashed rgb(83, 47, 10); */
+}
+
+.checkOut .total{
+    background-color: rgb(253, 244, 229);
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    border: 3px dashed rgb(83, 47, 10);
+    padding-top:10px;
+   
+}
+.checkOut .closeShopping{
+    font-size: 2rem;
+    text-align: center;
+    width: 50%;
+    border: 3px dashed rgb(83, 47, 10);
+    padding-top:10px;
+}
+.closeShopping:hover{
+cursor: pointer;
+font-size: 2rem;
+}
+
+
+.listCard {
+    width: 80%;
+    right: 6px;
+    background-color: rgba(253, 251, 243, 0.893);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border-radius: 1rem;
+    position: relative;
+    top: 50px;
+}
+
+.listCard .item img{
+    width: 30%;
+    display: flex;
+}
+.listCard .item{
+    margin: 10px ;
+    border: 3px dashed rgb(83, 47, 10);
+    display: flex;
+    flex-direction: row;
+}
+
+.listCard .item .iteminfo{
+    margin-top: 1rem;
+    position: relative;
+    width: 60%;
+    right: 14rem;
+    font-size: 1rem;
+}
+
+.listCard .item .changeinquantity{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    align-items: end;
+    font-size: 1.5rem;
+    margin: 5px;
+
+}
+.listCard .item .changeinquantity button{
+    background-color: var(--backgroundcolor3);
+    border: none;
+    border-radius: 1rem;
+    width: 30%;
+    margin: 2px;
+    height: 20%;
+}
+
+.listCard .item .changeinquantity button:hover{
+    cursor: pointer;
+}
